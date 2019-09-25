@@ -12,10 +12,11 @@ from spinup.algos.ue.MC_UE import plot_envelope_with_clipping
 from spinup.algos.ue.models.mlp_critic import Value
 
 
+
 def bc_ue_learn(env_set="Hopper-v2", seed=0, buffer_type="FinalSigma0.5", buffer_seed=0, buffer_size='1000K',
                 cut_buffer_size='1000K',
-				ue_seed_list=[1, 2, 3, 4, 5], gamma=0.99, ue_rollout=1000, ue_loss_k=10000, augment_mc=True,
-				clip_ue="f-auto", detect_interval=10000, k_prime=10000,
+				ue_seed_list=1, gamma=0.99, ue_rollout=1000, ue_loss_k=10000, augment_mc=True,
+				clip_ue="s-auto", detect_interval=10000, k_prime=10000,
 			    eval_freq=float(500), max_timesteps=float(1e5), lr=1e-3, wd=0, P=0.25,
 			    logger_kwargs=dict()):
 
