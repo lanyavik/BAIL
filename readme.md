@@ -13,7 +13,7 @@ Then you run BAIL in the following procedure:
 Under the BAIL folder, first do the returns calculation with `python main_get_mcret.py`, which stores the calculated returns in "./results".
 
 Then run Static BAIL with `python main_static_bail.py` or run Progressive BAIL with `python main_prog_bail.py`. 
-We use the logger of Spinup to record algorithmic performances. You may Consult Spinup documentation for output and plotting:
+We use the logger of Spinup to record algorithmic performances. You may consult Spinup documentation for output and plotting:
 (https://spinningup.openai.com/en/latest/user/saving_and_loading.html, https://spinningup.openai.com/en/latest/user/plotting.html). Or you could modify the code and save it in your style.
 
 
