@@ -2,11 +2,11 @@
 
 The code is currently anonymized for review. 
 
-Most important code can be found in the `spinup/algos` folder. The BAIL implementation can be found under `spinup/algos/BAIL/`.
+The BAIL implementation can be found under `spinup/algos/BAIL/`.
 Code runs with pytorch >= 1.2, mujoco 150
 
 ## Run experiment
-Create a folder of the path "spinup/algos/BAIL/buffers" and put all the RL batches there. 
+Create a folder of the path "spinup/algos/BAIL/buffers" and put the RL batches there. 
 
 Then you run BAIL in the following procedure:
 
