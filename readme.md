@@ -1,6 +1,6 @@
 ## BAIL
 
-Code for "BAIL: Best-Action Imitation Learning for Batch Deep Reinforcement Learning" paper, published at NeurIPS 2020.
+Code for the paper "BAIL: Best-Action Imitation Learning for Batch Deep Reinforcement Learning", published at NeurIPS 2020.
 
 The BAIL implementation can be found under `spinup/algos/BAIL/`.
 Code runs with pytorch >= 1.2, mujoco 150
