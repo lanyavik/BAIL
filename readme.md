@@ -1,6 +1,6 @@
-## Anonymized code for BAIL paper
+## BAIL
 
-The code is currently anonymized for review. 
+Code for "BAIL: Best-Action Imitation Learning for Batch Deep Reinforcement Learning" paper, published at Neurips 2020.
 
 The BAIL implementation can be found under `spinup/algos/BAIL/`.
 Code runs with pytorch >= 1.2, mujoco 150
@@ -22,8 +22,6 @@ We use the logger of Spinup to record algorithmic performances. You may consult 
 
 
 Implementation of the BCQ algorithm: https://github.com/sfujim/BCQ
-
-Code will be released publicly on github with a refined documentation after the review perioed. 
 
 
 ## BAIL performance on 62 batches
