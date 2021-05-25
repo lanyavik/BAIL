@@ -91,3 +91,19 @@ Implementation of the BCQ algorithm: https://github.com/sfujim/BCQ
 |O sigma=sigma(s) Humanoid B1|2129|381|
 |O sigma=sigma(s) Humanoid B2|4328|569|
 
+
+## Citation
+If you use our code, please cite our paper:
+```
+@inproceedings{chen2020bail,
+ author = {Chen, Xinyue and Zhou, Zijian and Wang, Zheng and Wang, Che and Wu, Yanqiu and Ross, Keith},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+ pages = {18353--18363},
+ publisher = {Curran Associates, Inc.},
+ title = {BAIL: Best-Action Imitation Learning for Batch Deep Reinforcement Learning},
+ url = {https://proceedings.neurips.cc/paper/2020/file/d55cbf210f175f4a37916eafe6c04f0d-Paper.pdf},
+ volume = {33},
+ year = {2020}
+}
+```
