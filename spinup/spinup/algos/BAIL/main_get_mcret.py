@@ -9,7 +9,7 @@ from spinup.algos.BAIL import utils
 
 print('data directory', os.getcwd())
 
-def get_mc(env_set="Hopper-v2", seed=1, buffer_type='FinalSigma0.5_env_0_1000K',
+def get_mc(env_set="Hopper-v2", seed=0, buffer_type='FinalSAC_env_0_1000K',
            gamma=0.99, rollout=1000, augment_mc='gain',
 		   logger_kwargs=dict()):
 
