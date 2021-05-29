@@ -5,7 +5,7 @@ from torch import Tensor
 import torch.nn as nn
 import torch.optim as optim
 import time
-from spinup.algos.sac_pytorch.utils import save_buffer
+
 from spinup.algos.sac_pytorch.core_auto import TanhGaussianPolicySACAdapt, Mlp, soft_update_model1_with_model2, ReplayBuffer
 from spinup.utils.logx import EpochLogger
 from spinup.utils.run_utils import setup_logger_kwargs
@@ -17,7 +17,7 @@ From early results it seems that this one actually works
 The results look similar to the results in the paper
 """
 
-def sac_adapt(env_fn, Env_Name, hidden_sizes=[256, 256], seed=0, buffer_size = int(1e6),
+def sac_adapt(env_fn, Env_Name, hidden_sizes=[256, 256], seed=0, #buffer_size = int(1e6),
               steps_per_epoch=5000, epochs=100, replay_size=int(1e6), gamma=0.99,
               polyak=0.995, lr=3e-4, alpha=0.2, batch_size=256, start_steps=10000,
               max_ep_len=1000, save_freq=1, dont_save=True, regularization_weight=1e-3,
@@ -188,9 +188,9 @@ def sac_adapt(env_fn, Env_Name, hidden_sizes=[256, 256], seed=0, buffer_size = i
         # Store experience (observation, action, reward, next observation, done) to replay buffer
         replay_buffer.store(o, a, r, o2, d)
 
-        if t >= buffer_size:
-            save_buffer(replay_buffer, Env_Name, seed)
-            break
+#         if t >= buffer_size:
+#             save_buffer(replay_buffer, Env_Name, seed)
+#             break
 
         """
         one data one update part
