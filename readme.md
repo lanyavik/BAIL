@@ -17,6 +17,33 @@ We use the logger of Spinup to record algorithmic performances. You may consult 
 (https://spinningup.openai.com/en/latest/user/saving_and_loading.html, https://spinningup.openai.com/en/latest/user/plotting.html). Or you could modify the code and save it in your style.
 
 
+## Download data:
+We now have an optimized version of the buffers, which are much smaller than the original dataset (but the content is the same, just in a different format), they can be downloaded here (about 28 GB in total):
+
+https://drive.google.com/drive/folders/1pjHodByRE0UelFJ0e1cZ2oKhffIsxu3d?usp=sharing
+
+You can load them with joblib, the loaded object is a dictionary, and then each entry is a NumPy array (sample code below).
+
+```
+import joblib
+d = joblib.load('DDPG_Final_Sigma0.5_Walker2d-v2_b1.pkl')
+for key in d:
+    print(key)
+    print(d[key].shape)
+
+""" output:
+observations
+(1000000, 17)
+next_observations
+(1000000, 17)
+actions
+(1000000, 6)
+rewards
+(1000000,)
+dones
+(1000000,)
+"""
+```
 
 ## Reference: 
 
